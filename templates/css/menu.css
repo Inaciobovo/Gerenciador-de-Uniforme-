@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F1F5F9; /* Mudei o red para um cinza para você visualizar melhor, mas pode voltar para red */
+    display: flex; /* Permite que o conteúdo ao lado do menu flua corretamente */
+}
+
+
+/* O Header agora é o container do seu menu lateral */
+.header {
+    background-color: #0F172A;
+    width: 150px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Coloca logo em cima e nav embaixo */
+    position: fixed;
+    padding-bottom: 20px;
+    flex-direction: column;
+    position: fixed;
+}
+
+.imglogo {
+    width: 150px;
+    height: 150px;
+    background-color: #0F172A;
+    object-fit: contain; /* Garante que a imagem não distorça */
+    padding: 10px;
+    border-bottom: 3px solid #1f325d;;
+}
+
+.nav-bar {
+    width: 100%;
+    color: #FFFFFF;
+    list-style: none;
+}
+
+ul {
+    list-style: none; /* Remove os pontos da lista */
+}
+
+li {
+    text-align: center;
+    padding: 15px 10px;
+    border-bottom: 1px solid #1f325d; /* Uma divisória sutil em vez de underline */
+}
+
+li a {
+    color: white;
+    text-decoration: none; /* UX: Menus modernos raramente usam underline fixo */
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+li:hover {
+    background-color: #1e293b; /* Efeito visual ao passar o mouse */
+}
+
+
+.container-tabela{
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0.0.0.0.05);
+    margin: 20px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse; /* remove espaco entre as bordas*/
+    font-family: sans-serif;
+    text-align: left;
+}
+
+
+thead tr{
+    background-color: #0F172A;
+    color: #FFFFFF;
+    text-align: left;
+    color: white;
+    
+}
+
+th, td{
+    padding: 12px 15px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tbody tr:hover{
+    background-color: #f8fafc; /* Efeito visual ao passar o mouse*/
+}
+
+td{
+    color: #475569;
+}
+
+.main-menu{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: 100vh;
+    background-color: #f8fafc;
+}
+
+.container-tabela{
+    width: 90%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0.0.0.0.05);
+    margin-left: 150px;
+}
+
+#btn-logout{
+    margin-top: auto;
+    width: 80%;
+    height: 40px;
+    background-color: #991b1b;
+    border: none;
+    border-radius: 88px;
+    cursor: pointer;
+    align-self: center;
+    font-weight: bold;
+    color: white;
+    border-color: red;
+}
+
+#btn-logout:hover{
+    width: 90%;
+    height: 50px;
+    transition: 0.4s;
+    font-size: 15px;
+    background-color: red;
+}

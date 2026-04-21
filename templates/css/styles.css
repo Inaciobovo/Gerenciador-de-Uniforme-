@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif; /* Fonte limpa é essencial no Dark Mode */
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Fundo bem escuro e profundo */
+    background-color: #0F172A; 
+}
+
+header{
+    height: 100vh;
+}
+
+.menu {
+    /* Card levemente mais claro que o fundo para dar profundidade */
+    background-color: #1E293B; 
+    padding: 2.5rem;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 16px;
+    border: 1px solid #1f58a7; 
+    /* Borda sutil para destacar do fundo */
+}
+
+#img-login {
+    width: 150px;
+    height: 150px;
+    /* Azul escuro vibrante para o círculo do logo */
+    background-color: #334155; 
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+}
+
+.login label {
+    color: #94A3B8; /* Cinza claro para os rótulos */
+    font-size: 0.85rem;
+    margin-bottom: -1rem;
+}
+
+.login input {
+    border-radius: 8px;
+    height: 48px;
+    /* Input mais escuro que o card */
+    background-color: #0F172A; 
+    border: 1px solid #334155;
+    padding: 0 1rem;
+    color: #F8FAFC; /* Texto quase branco para leitura */
+    outline: none;
+}
+
+.login input:focus {
+    border-color: #3B82F6; /* Brilha azul ao clicar */
+}
+
+.btn {
+    width: 100%;
+    height: 48px;
+    background-color: #3B82F6; /* Azul Royal para o CTA (Call to Action) */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    background-color: #2563EB;
+    transform: translateY(-1px); /* Efeito de UX: botão "sobe" ao passar o mouse */
+}
+
+a {
+    color: #64748B;
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-top: 1rem;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #3B82F6;
+}
