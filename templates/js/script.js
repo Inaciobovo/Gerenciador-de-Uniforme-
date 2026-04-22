@@ -16,3 +16,8 @@ function Login(){
 }
 
 
+function Logout(){
+    if(confirm("tem certeza que deseja sair?")){
+        window.location.href = "../index.html";
+    }
+}
