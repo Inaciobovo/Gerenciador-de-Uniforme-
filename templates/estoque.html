@@ -1,25 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/templates/css/menu.css">
+    <link rel="stylesheet" href="/templates/css/estoque.css">
+
+
+
     <title>Document</title>
 </head>
+
 <body>
     <header class="header">
-        <a href="menu.html">
-            <img  class="imglogo" 
-            src="/img/LOG1.png" 
-        </a>
+        <img class="imglogo" src="/img/LOG1.png" alt="">
         <nav class="nav-bar">
             <ul>
-                <li><a href="estoque.html">Bolsonar</a></li>
+                <li><a href="estoque.html">Estoque</a></li>
+                <li><a href="#">Estoque</a></li>
                 <li><a href="#">Bolsonar</a></li>
                 <li><a href="#">Bolsonar</a></li>
-                
+
             </ul>
+
         </nav>
+        <button id="btn-logout" onclick="Logout()">Sair</button>
+
+
     </header>
+    <main class="main-menu">
+        <div class="container-tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Modelo Uniforme</th>
+                        <th>Qtd em Estoque</th>
+                        <th>Qtd em Uso</th>
+                        <th>Valor Total</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Polo Cinza</td>
+                        <td>45</td>
+                        <td>120</td>
+                        <td>$ 8.250.00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <h1 id="h1-cadastro">Cadastrar Funcionario</h1>
+            <div class="cadastrar">
+                
+                <form class="formAddUniforme">
+                
+                    <label id="lb-modeloUniforme">MODELO DE UNIFORME</label>
+                    <select name="modeloUniforme" id="modeloUniforme" >
+                        
+                        <option value="polo-cinza">
+                            POLO CINZA 
+                        </option>
+                        <option value="camisa-azul">
+                            CAMISA AZUL
+                        </option>
+                        <option value="camisa-branca">
+                            CAMISA BRANCA
+                        </option>
+                        <option value="calca-branca">
+                            CAMISA PRETA
+                        </option>
+                        <option value="camisa-caixa">
+                            CAMISA CAIXA
+                        </option>
+                        <label id="Uniforme">Tamanho</label>
+                    </select>
+
+                    <label id="lb-tamanhoUniforme">TAMANHO UNIFORME</label>
+                    <select name="tamanhoUniforme" id="tamanhoUniforme">
+
+                        <option value="p">
+                            P
+                        </option>
+
+                        <option value="m">
+                            M
+                        </option>
+
+                        <option value="g">
+                            G
+                        </option>
+
+                        <option value="gg">
+                            GG
+                        </option>
+
+                        <option value="xg">
+                            XG
+                        </option>
+                    </select>
+
+                    <label id="lb-nameFuncionario">NOME DO FUNCIONARIO</label>
+                    <input type="text" id="nomeFuncionario" placeholder="nome completo">
+
+                    <label>Setor do funcionario</label>
+                    <input type="text" id="setorFuncionario" placeholder="ex: Estoque, Administrativo">
+
+                    <label id="fichaRecebimento">Foto da ficha (e obrigatorio obter aficha assim que entregar para o funcionario)</label>
+                    <input type="file">
+
+
+                    <button id="btn-funcionario">Cadastrar Funcionario</button>
+                </form>
+        </div>
+    </main>
+
+    
+    
 </body>
+<script src="/templates/js/script.js"></script>
+
 </html>

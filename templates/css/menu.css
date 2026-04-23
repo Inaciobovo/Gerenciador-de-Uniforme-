@@ -32,6 +32,12 @@ body {
     border-bottom: 3px solid #1f325d;;
 }
 
+.imglogo:hover{
+    height: 160px;
+    width: 160px;
+    cursor: pointer;
+}
+
 .nav-bar {
     width: 100%;
     color: #FFFFFF;

@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F1F5F9; /* Mudei o red para um cinza para você visualizar melhor, mas pode voltar para red */
+    display: flex; /* Permite que o conteúdo ao lado do menu flua corretamente */
+}
+
+
+/* O Header agora é o container do seu menu lateral */
+.header {
+    background-color: #0F172A;
+    width: 150px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Coloca logo em cima e nav embaixo */
+    position: fixed;
+    padding-bottom: 20px;
+    flex-direction: column;
+    position: fixed;
+}
+
+.imglogo {
+    width: 150px;
+    height: 150px;
+    background-color: #0F172A;
+    object-fit: contain; /* Garante que a imagem não distorça */
+    padding: 10px;
+    border-bottom: 3px solid #1f325d;;
+}
+
+.imglogo:hover{
+    height: 160px;
+    width: 160px;
+    cursor: pointer;
+}
+
+.nav-bar {
+    width: 100%;
+    color: #FFFFFF;
+    list-style: none;
+}
+
+ul {
+    list-style: none; /* Remove os pontos da lista */
+}
+
+li {
+    text-align: center;
+    padding: 15px 10px;
+    border-bottom: 1px solid #1f325d; /* Uma divisória sutil em vez de underline */
+}
+
+li a {
+    color: white;
+    text-decoration: none; /* UX: Menus modernos raramente usam underline fixo */
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+li:hover {
+    background-color: #1e293b; /* Efeito visual ao passar o mouse */
+}
+
+
+.container-tabela{
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0.0.0.0.05);
+    margin: 20px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse; /* remove espaco entre as bordas*/
+    font-family: sans-serif;
+    text-align: left;
+}
+
+
+thead tr{
+    background-color: #0F172A;
+    color: #FFFFFF;
+    text-align: left;
+    color: white;
+    
+}
+
+th, td{
+    padding: 12px 15px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tbody tr:hover{
+    background-color: #f8fafc; /* Efeito visual ao passar o mouse*/
+}
+
+td{
+    color: #475569;
+}
+
+.main-menu{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: 100vh;
+    background-color: #f8fafc;
+}
+
+.container-tabela{
+    width: 90%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0.0.0.0.05);
+    margin-left: 150px;
+}
+
+#btn-logout{
+    margin-top: auto;
+    width: 80%;
+    height: 40px;
+    background-color: #991b1b;
+    border: none;
+    border-radius: 88px;
+    cursor: pointer;
+    align-self: center;
+    font-weight: bold;
+    color: white;
+    border-color: red;
+}
+
+#btn-logout:hover{
+    width: 90%;
+    height: 50px;
+    transition: 0.4s;
+    font-size: 15px;
+    background-color: red;
+}
+
+
+#h1-cadastro{
+    padding: 50px;
+    text-align:  center;
+    background-color:#1e293b;
+    color: white;
+    padding: 10px;
+    border:3px solid #475569;
+    border-radius: 19px;
+}
+
+.cadastrar{
+    padding: 20px;
+    border-radius: 10px;
+    
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+#btn-funcionario{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+
+.formAddUniforme{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    
+}
+
+#lb-modeloUniforme {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+    padding: 5px 0; /* Reduzi o padding para não afastar demais do campo */
+    text-align: center; /* Mantendo centralizado como no seu original */
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+#modeloUniforme {
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    margin: 0 auto; /* Centraliza o input horizontalmente */
+    display: flex;
+    text-align: center;
+    
+    background-color: #f8f9fa; /* Um tom de cinza "off-white" mais elegante */
+    border: 1.5px solid #e0e0e0;
+    border-radius: 8px;
+    
+    font-family: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+
+/* Feedback visual ao selecionar */
+#modeloUniforme:focus {
+    /* Um verde suave (combina com uniformes/estoque) */
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(40, 167, 69, 0.15);
+}
+
+#lb-tamanhoUniforme {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+    padding: 5px 0; /* Reduzi o padding para não afastar demais do campo */
+    text-align: center; /* Mantendo centralizado como no seu original */
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+#tamanhoUniforme {
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    margin: 0 auto; /* Centraliza o input horizontalmente */
+    display: flex;
+    text-align: center;
+    
+    background-color: #f8f9fa; /* Um tom de cinza "off-white" mais elegante */
+    border: 1.5px solid #e0e0e0;
+    border-radius: 8px;
+    
+    font-family: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+
+#lb-nameFuncionario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#nomeFuncionario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%; /* garante que preencha o container*/
+    max-width: 300px; /*Limite de largura para nao esticar demias*/
+    height: 40px; /*Altura levemente maior para melhor usabilidade*/
+    padding: 0 15px;
+
+    border-color: #f4f4f4;  /*Cinza bem claro*/
+    border: 1px solid #ccc;
+    border-radius: 8px;  /* Cantos mais arredondados e modernos*/
+
+    font-family: inherit;
+    font-size: 14px;
+    color: #333;
+
+    outline: none;
+    transition: all 0.3s ease;  /* Transicao suvae para o focoa*/
+    box-sizing: border-box; /* garante que o padding nao quebre a largura*/
+}
+
+/* Efeito de foco para parecer um sistema profissiona;*/
+
+#nomeFuncionario:focus{
+    background-color: #FFFFFF;
+    border-color: #0F172A; /* Azul moderno*/
+    box-shadow: 0 0 0 3px rgba(1, 39, 79, 0.25);
+}

@@ -3,7 +3,7 @@ function Login(){
     const passUser = document.getElementById("pass-input").value;
 
     // Definir Credenciais (com strings)
-    const REALUSER = "inacio@bovotech.com";
+    const REALUSER = "ibovo@bovotech.com";
     const REALPASS = "admin123"
 
     // A logica do IF precisa comparar cada campo individualmente
@@ -20,4 +20,12 @@ function Logout(){
     if(confirm("tem certeza que deseja sair?")){
         window.location.href = "../index.html";
     }
+}
+
+function adicionarEstoque(){
+    return;
+}
+
+function recuperarSenha(){
+    return;
 }
